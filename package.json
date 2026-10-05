@@ -1,8 +1,16 @@
 {
   "name": "@aightto/plane-to-paseo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Paseo plugin: browse, filter, and search work items in a self-hosted Plane workspace and start work on any of them in a fresh workspace.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g0rdonL/plane-to-paseo.git"
+  },
+  "homepage": "https://github.com/g0rdonL/plane-to-paseo#readme",
+  "bugs": {
+    "url": "https://github.com/g0rdonL/plane-to-paseo/issues"
+  },
   "type": "module",
   "files": [
     "paseo-plugin.json",

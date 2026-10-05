@@ -31,7 +31,8 @@ jobs:
     name: Plane sync
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    if: github.actor != 'dependabot[bot]'
+    # Only the private working repo has PLANE_API_KEY; the public mirror skips the job.
+    if: github.repository == 'g0rdonL/plane-to-paseo-private' && github.actor != 'dependabot[bot]'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
