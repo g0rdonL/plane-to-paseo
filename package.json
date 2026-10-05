@@ -1,0 +1,39 @@
+{
+  "name": "@aightto/plane-to-paseo",
+  "version": "0.1.0",
+  "description": "Paseo plugin: browse, filter, and search work items in a self-hosted Plane workspace and start work on any of them in a fresh workspace.",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "paseo-plugin.json",
+    "index.client.tsx",
+    "index.server.ts",
+    "client/",
+    "server/",
+    "shared/",
+    "!**/*.test.ts",
+    "!server/plane/test-server.ts"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run && node --test scripts/plane-pr-sync.test.mjs",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check .",
+    "sync:plane-prs": "node scripts/plane-pr-sync.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.10",
+    "@getpaseo/client": "0.10.3",
+    "@getpaseo/plugin": "0.10.3",
+    "@getpaseo/protocol": "0.10.3",
+    "@tanstack/react-query": "^5.90.11",
+    "@types/node": "22.20.1",
+    "@types/react": "~19.2.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.6",
+    "zod": "^4.4.3"
+  }
+}

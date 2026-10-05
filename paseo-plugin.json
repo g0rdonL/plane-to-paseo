@@ -1,0 +1,4 @@
+{
+  "id": "plane-to-paseo",
+  "requirements": { "paseo": ">=0.10.3" }
+}
